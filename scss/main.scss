@@ -1,5 +1,53 @@
-$primary-color: blue;
+@import url('https://fonts.googleapis.com/css?family=PT+Sans|PT+Sans+Caption');
+$primary-color: white;
+$primary-font: 'PT Sans', sans-serif;
+$secondary-font: 'PT Sans Caption', sans-serif;
 
-h1 {
+html, body {
+    margin: 0; 
+	padding: 0;
+	border: 0;
+}
+
+header {
+    height: 400px;
+    background-image: url("../images/theater.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header li, label {
     color: $primary-color;
 }
+
+h1 {
+    margin: 0;
+    color: $primary-color;
+    font-family: $primary-font;
+}
+
+ul {
+    list-style-type: none;
+}
+
+p, li, label {
+    font-family: $secondary-font;
+}
+
+#movie-container ul {
+    display: flex;
+    flex-wrap: wrap;
+
+    li {
+        display: inline-block;
+        width: 200px;
+        padding: 20px;
+    }
+    img {
+        width: 200px;
+    }
+}
+
+
+
+
