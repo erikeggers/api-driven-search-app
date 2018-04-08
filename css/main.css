@@ -1,2 +1,35 @@
+@import url("https://fonts.googleapis.com/css?family=PT+Sans|PT+Sans+Caption");
+html, body {
+  margin: 0;
+  padding: 0;
+  border: 0; }
+
+header {
+  height: 400px;
+  background-image: url("../images/theater.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+header li, label {
+  color: white; }
+
 h1 {
-  color: blue; }
+  margin: 0;
+  color: white;
+  font-family: "PT Sans", sans-serif; }
+
+ul {
+  list-style-type: none; }
+
+p, li, label {
+  font-family: "PT Sans Caption", sans-serif; }
+
+#movie-container ul {
+  display: flex;
+  flex-wrap: wrap; }
+  #movie-container ul li {
+    display: inline-block;
+    width: 200px;
+    padding: 20px; }
+  #movie-container ul img {
+    width: 200px; }

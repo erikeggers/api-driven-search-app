@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+
     <header>
         <h1>Movie Search</h1>
         <nav>
@@ -17,14 +18,20 @@
         </nav>
 
         <form class="movie-search">
-                <input class="movieName" id="movie-title" size="32">
-                <button id="btn">SEARCH</button>
+            <label for="movie-title">Search for a movie</label>
+            <input class="movieName" id="movie-title" size="32">
+            <button id="btn">SEARCH</button>
         </form>
 
     </header>
-    <section>
 
+    <section>
+        <div id="movie-container"></div>
     </section>
+
+    <footer>
+        <p>Built By Erik Eggers for DWS2</p>
+    </footer>
 </body>
 <script src="js/main.js"></script>
 </html>

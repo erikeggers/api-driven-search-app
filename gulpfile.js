@@ -20,7 +20,7 @@ gulp.task('browser-sync', function() {
         server: {
             baseDir: "./"
         }
-    })
+    });
 })
 
 gulp.task('watch', ['browser-sync', 'scss'], function() {
