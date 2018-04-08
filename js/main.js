@@ -1,6 +1,6 @@
 var movieKeywords;
 
-document.getElementById("btn").addEventListener('click', function(event){
+document.querySelector(".movie-search").addEventListener('submit', function(event){
     event.preventDefault();
     movieKeywords = document.querySelector('#movie-title').value;
     searchQuery(movieKeywords);
@@ -36,7 +36,7 @@ function searchQuery (keywords) {
                     movie += '<img src="' + noPoster + '" alt="' + results[i].title + '">';
                 }
 
-                movie += '<h2>' + results[i].title + '</h2>'
+                movie += '<h3>' + results[i].title + '</h3>'
                 movie += '<p>' + results[i].release_date + '</p>'
                 movie += '<p>' + results[i].overview + '</p>'
                 movie += '</li>'
