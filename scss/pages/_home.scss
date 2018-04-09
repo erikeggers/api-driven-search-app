@@ -1,6 +1,6 @@
 .movie-search, {
     width: 390px;
-    margin: 0 auto;
+    @extend %center-element;
 
     label {
         width: 160px;
