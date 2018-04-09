@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=PT+Sans|PT+Sans+Caption");
-html, body, header nav, footer p {
+html, body, .movie-search, header nav, footer p {
   margin-left: auto;
   margin-right: auto; }
 
@@ -34,8 +34,7 @@ p, li, label {
   font-size: 16px; }
 
 .movie-search {
-  width: 390px;
-  margin: 0 auto; }
+  width: 390px; }
   .movie-search label {
     width: 160px;
     padding: 2px;
