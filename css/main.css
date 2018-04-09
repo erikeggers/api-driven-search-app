@@ -14,8 +14,11 @@ header {
   background-size: cover; }
   header nav {
     margin: 0 auto;
-    width: 760px;
+    max-width: 780px;
     padding-bottom: 60px; }
+
+header img {
+  width: 20px; }
 
 header h1, ul, li {
   display: inline-block; }
@@ -23,7 +26,7 @@ header h1, ul, li {
     padding-right: 5px; }
 
 header ul {
-  padding-left: 440px; }
+  padding-left: 420px; }
 
 footer {
   width: 100%;
