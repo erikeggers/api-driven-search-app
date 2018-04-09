@@ -1,0 +1,37 @@
+html, body {
+    @extend %center-element;
+    margin-top: 0px;
+    height: 100%;
+	padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+h1, h2 {
+    color: $primary-color;
+    font-family: $primary-font;
+}
+
+h1 {
+    margin: 0;
+}
+
+h2:first-child {
+    padding: 5px;
+    width: 300px;
+    margin-left:50px;
+    background-color: #424242;
+}
+
+h3 {
+    padding-top: 30px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+p, li, label {
+    font-family: $secondary-font;
+    font-size: $font;
+}

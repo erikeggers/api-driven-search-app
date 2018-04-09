@@ -1,0 +1,33 @@
+header {
+    padding-top: 10px;
+    height: 300px;
+    @include background(url("../images/theater.jpg"), no-repeat, cover);
+
+    nav {
+        @extend %center-element;
+        max-width: 780px;
+        padding-bottom: 60px;
+    }
+
+}
+
+header img {
+    width: 20px;
+  }
+
+header  h1, ul, li {
+    display: inline-block;
+
+    li {
+        padding-right: 5px;
+        font-size: $font;
+    }
+}
+
+header ul {
+    padding-left: 420px;
+}
+
+header li, label {
+    color: $primary-color;
+}
