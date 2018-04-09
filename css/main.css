@@ -1,45 +1,14 @@
 @import url("https://fonts.googleapis.com/css?family=PT+Sans|PT+Sans+Caption");
+html, body, header nav, footer p {
+  margin-left: auto;
+  margin-right: auto; }
+
 html, body {
+  margin-top: 0px;
   height: 100%;
-  margin: 0;
   padding: 0;
   border: 0;
   box-sizing: border-box; }
-
-header {
-  padding-top: 10px;
-  height: 300px;
-  background-image: url("../images/theater.jpg");
-  background-repeat: no-repeat;
-  background-size: cover; }
-  header nav {
-    margin: 0 auto;
-    max-width: 780px;
-    padding-bottom: 60px; }
-
-header img {
-  width: 20px; }
-
-header h1, ul, li {
-  display: inline-block; }
-  header h1 li, ul li, li li {
-    padding-right: 5px; }
-
-header ul {
-  padding-left: 420px; }
-
-footer {
-  width: 100%;
-  height: 60px;
-  background: #424242;
-  color: #FFF; }
-  footer p {
-    width: 300px;
-    margin: 0 auto;
-    padding-top: 20px; }
-
-header li, label {
-  color: #FFF; }
 
 h1, h2 {
   color: #FFF;
@@ -61,7 +30,8 @@ ul {
   list-style-type: none; }
 
 p, li, label {
-  font-family: "PT Sans Caption", sans-serif; }
+  font-family: "PT Sans Caption", sans-serif;
+  font-size: 16px; }
 
 .movie-search {
   width: 390px;
@@ -96,8 +66,42 @@ p, li, label {
   #movie-container ul li {
     width: 200px;
     display: inline-block;
-    width: 200px;
     padding: 20px;
     margin: 10px;
     background-color: #424242;
     color: #FFF; }
+
+header {
+  padding-top: 10px;
+  height: 300px;
+  background-image: url("../images/theater.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
+  header nav {
+    max-width: 780px;
+    padding-bottom: 60px; }
+
+header img {
+  width: 20px; }
+
+header h1, ul, li {
+  display: inline-block; }
+  header h1 li, ul li, li li {
+    padding-right: 5px;
+    font-size: 16px; }
+
+header ul {
+  padding-left: 420px; }
+
+header li, label {
+  color: #FFF; }
+
+footer {
+  width: 100%;
+  height: 60px;
+  background: #424242;
+  color: #FFF; }
+  footer p {
+    width: 300px;
+    padding-top: 20px;
+    margin-top: 10px; }

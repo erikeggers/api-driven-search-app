@@ -1,0 +1,49 @@
+.movie-search, {
+    width: 390px;
+    margin: 0 auto;
+
+    label {
+        width: 160px;
+        padding: 2px;
+        display: block;
+        background-color: $background-color;
+    }
+
+    input {
+        width: 400px;
+        height: 40px;
+        padding: 8px;
+        background-image: url("../images/search.png");
+        background-size: 40px;
+        background-position: right;
+        background-repeat: no-repeat;
+        background-color: $primary-color;
+        font-size: 30px;
+    }
+
+}
+
+#movie-container {
+    min-height: calc(70vh - 60px);
+    width: 860px;
+    margin: 0 auto;
+}
+
+#movie-container ul {
+    display: flex;
+    flex-wrap: wrap;
+
+    img {
+        margin: -20px;
+        width: 240px; 
+        
+    }
+    li, {
+        width: 200px; 
+        display: inline-block;
+        padding: 20px;
+        margin: 10px;
+        background-color: #424242;
+        color: $primary-color;
+    }
+}
