@@ -83,7 +83,7 @@ p, li, label {
     font-size: 30px; }
 
 #movie-container {
-  min-height: calc(100vh - 60px);
+  min-height: calc(70vh - 60px);
   width: 860px;
   margin: 0 auto; }
 
