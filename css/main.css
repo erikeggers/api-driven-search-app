@@ -20,7 +20,7 @@ h1 {
 h2:first-child {
   padding: 5px;
   width: 300px;
-  margin-left: 50px;
+  margin-left: 60px;
   background-color: #424242; }
 
 h3 {
@@ -75,15 +75,15 @@ p, li, label {
   display: flex;
   flex-wrap: wrap; }
   #movie-container ul img {
-    margin: -20px;
-    width: 240px; }
+    width: 225px; }
   #movie-container ul li {
-    width: 200px;
+    width: 225px;
     display: inline-block;
-    padding: 20px;
-    margin: 10px;
+    margin: 20px;
     background-color: #424242;
     color: #FFF; }
+  #movie-container ul h3, #movie-container ul p {
+    margin: 10px; }
 
 header {
   padding-top: 10px;
@@ -92,7 +92,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover; }
   header nav {
-    max-width: 780px;
+    max-width: 760px;
     padding-bottom: 60px; }
 
 header img {
@@ -100,12 +100,13 @@ header img {
 
 header h1, ul, li {
   display: inline-block; }
-  header h1 li, ul li, li li {
-    padding-right: 5px;
-    font-size: 16px; }
+
+header li {
+  padding-right: 5px;
+  font-size: 16px; }
 
 header ul {
-  padding-left: 420px; }
+  padding-left: 415px; }
 
 header li, label {
   color: #FFF; }
