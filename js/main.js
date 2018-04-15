@@ -61,3 +61,16 @@ function searchQuery (keywords) {
             console.log('Error: ', error)
     })
 }
+
+//Hamburger menu 
+document.querySelector(".hamburger").addEventListener('click', function(){
+    document.querySelector(".hamburger").style.display = "none";
+    document.querySelector(".close").style.display = "block";
+    document.querySelector(".menuList").style.display = "block";
+});
+
+document.querySelector(".close").addEventListener('click', function(){
+    document.querySelector(".close").style.display = "none";
+    document.querySelector(".hamburger").style.display = "block";
+    document.querySelector(".menuList").style.display = "none";
+});

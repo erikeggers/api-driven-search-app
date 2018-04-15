@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=PT+Sans|PT+Sans+Caption");
-html, body, .movie-search, header nav, footer p {
+html, body, .movie-search, header nav, .logoContainer, footer p {
   margin-left: auto;
   margin-right: auto; }
 
@@ -60,7 +60,7 @@ p, li, label {
     border: none;
     width: 50px;
     height: 50px;
-    z-index: 9999;
+    z-index: 1;
     cursor: pointer; }
 
 .movie-search button:focus {
@@ -95,21 +95,84 @@ header {
     max-width: 760px;
     padding-bottom: 60px; }
 
-header img {
-  width: 20px; }
-
-header h1, ul, li {
+header h1 {
   display: inline-block; }
-
-header li {
-  padding-right: 5px;
-  font-size: 16px; }
-
-header ul {
-  padding-left: 410px; }
+  header h1 ul {
+    text-align: right; }
+  header h1 li {
+    padding-right: 5px;
+    font-size: 16px; }
+    @media (min-width: 800px) {
+      header h1 li {
+        display: inline-block; } }
 
 header li, label {
   color: #FFF; }
+
+header ul {
+  padding-left: 390px; }
+
+.logoContainer img {
+  width: 20px;
+  padding-left: 20px; }
+
+.logoContainer {
+  width: 200px; }
+  @media (min-width: 800px) {
+    .logoContainer {
+      display: inline-block; } }
+
+.hamburger, .close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 3;
+  cursor: pointer; }
+  @media (min-width: 800px) {
+    .hamburger, .close {
+      display: none !important; } }
+
+.hamburger {
+  display: block; }
+
+.close {
+  display: none; }
+
+.menuList {
+  display: none;
+  background: #424242;
+  position: absolute;
+  width: 100%;
+  margin: 0;
+  padding: 20px;
+  padding-top: 80px;
+  padding-bottom: 110px;
+  right: 0;
+  top: 0;
+  text-align: right;
+  list-style-position: inside;
+  z-index: 2; }
+  .menuList li {
+    font-size: 28px;
+    padding-top: 5px; }
+  .menuList a {
+    text-decoration: none; }
+
+@media (min-width: 800px) {
+  .menuList {
+    display: inline-block !important;
+    width: 200px;
+    position: static;
+    margin: 0;
+    padding: 0;
+    padding-left: 360px;
+    display: inline-block;
+    background: none;
+    z-index: 0; }
+    .menuList li {
+      font-size: 16px;
+      display: inline-block;
+      padding-left: 5px; } }
 
 footer {
   width: 100%;
