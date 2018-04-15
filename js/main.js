@@ -17,7 +17,7 @@ document.querySelector(".movie-search").addEventListener('submit', function(even
     searchQuery(movieKeywords);
 });
 
-//Run search query
+//Run search query using keywords
 function searchQuery (keywords) {
     let url = 'https://api.themoviedb.org/3/search/movie?api_key=7262b9dce7fa1f8eb48117f0179c21ae&query=' + keywords + '&include_adult=false'
 
