@@ -20,7 +20,7 @@ h1 {
 h2:first-child {
   padding: 5px;
   width: 300px;
-  margin-left: 60px;
+  margin-left: 50px;
   background-color: #424242; }
 
 h3 {
@@ -92,7 +92,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover; }
   header nav {
-    max-width: 760px;
+    max-width: 780px;
     padding-bottom: 60px; }
 
 header h1 {
