@@ -20,7 +20,7 @@ h1 {
 h2:first-child {
   padding: 5px;
   width: 300px;
-  margin-left: 50px;
+  margin-left: 60px;
   background-color: #424242; }
 
 h3 {
@@ -34,22 +34,37 @@ p, li, label {
   font-size: 16px; }
 
 .movie-search {
-  width: 390px; }
+  width: 400px;
+  position: relative; }
   .movie-search label {
     width: 160px;
     padding: 2px;
     display: block;
     background-color: #424242; }
   .movie-search input {
-    width: 400px;
+    width: 100%;
+    display: inline-block;
     height: 40px;
-    padding: 8px;
-    background-image: url("../images/search.png");
-    background-size: 40px;
-    background-position: right;
-    background-repeat: no-repeat;
-    background-color: #FFF;
+    padding-top: 8px;
+    padding-left: 8px;
+    padding-bottom: 8px;
     font-size: 30px; }
+  .movie-search button {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 30px;
+    background-image: url("../images/search.png");
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    width: 50px;
+    height: 50px;
+    z-index: 9999;
+    cursor: pointer; }
+
+.movie-search button:focus {
+  outline: 0; }
 
 #movie-container {
   min-height: calc(70vh - 60px);
@@ -60,15 +75,15 @@ p, li, label {
   display: flex;
   flex-wrap: wrap; }
   #movie-container ul img {
-    margin: -20px;
-    width: 240px; }
+    width: 225px; }
   #movie-container ul li {
-    width: 200px;
+    width: 225px;
     display: inline-block;
-    padding: 20px;
-    margin: 10px;
+    margin: 20px;
     background-color: #424242;
     color: #FFF; }
+  #movie-container ul h3, #movie-container ul p {
+    margin: 10px; }
 
 header {
   padding-top: 10px;
@@ -77,7 +92,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover; }
   header nav {
-    max-width: 780px;
+    max-width: 760px;
     padding-bottom: 60px; }
 
 header img {
@@ -85,12 +100,13 @@ header img {
 
 header h1, ul, li {
   display: inline-block; }
-  header h1 li, ul li, li li {
-    padding-right: 5px;
-    font-size: 16px; }
+
+header li {
+  padding-right: 5px;
+  font-size: 16px; }
 
 header ul {
-  padding-left: 420px; }
+  padding-left: 410px; }
 
 header li, label {
   color: #FFF; }
