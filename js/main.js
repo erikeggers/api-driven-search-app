@@ -4,6 +4,7 @@ let movieKeywords;
 if (localStorage.getItem('searchValue')) {
     let storage = localStorage.getItem('searchValue');
     document.querySelector('#movie-title').value = storage;
+    movieKeywords = storage;
     searchQuery(storage);
 }
 
@@ -16,7 +17,7 @@ document.querySelector(".movie-search").addEventListener('submit', function(even
     searchQuery(movieKeywords);
 });
 
-//Fun search query
+//Run search query
 function searchQuery (keywords) {
     let url = 'https://api.themoviedb.org/3/search/movie?api_key=7262b9dce7fa1f8eb48117f0179c21ae&query=' + keywords + '&include_adult=false'
 
