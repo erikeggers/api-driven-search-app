@@ -1,8 +1,16 @@
 let movieKeywords;
 
+if (localStorage.getItem('searchValue')) {
+    let storage = localStorage.getItem('searchValue');
+    document.querySelector('#movie-title').value = storage;
+    searchQuery(storage);
+}
+
 document.querySelector(".movie-search").addEventListener('submit', function(event){
     event.preventDefault();
     movieKeywords = document.querySelector('#movie-title').value;
+    localStorage.setItem('searchValue', movieKeywords);
+    console.log(localStorage.getItem('searchValue'));
     searchQuery(movieKeywords);
 });
 
