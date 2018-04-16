@@ -46,10 +46,14 @@ p, li, label {
     .movie-search {
       width: 460px; } }
   .movie-search label {
-    width: 160px;
+    width: 180px;
     padding: 2px;
     display: block;
-    background-color: #424242; }
+    background-color: #424242;
+    font-size: 16px; }
+    @media (min-width: 800px) {
+      .movie-search label {
+        font-size: 18px; } }
   .movie-search input {
     width: 100%;
     display: inline-block;
@@ -122,18 +126,26 @@ p, li, label {
 .movieDetails {
   display: inline-block;
   margin: 10px;
-  max-width: 320px; }
+  max-width: 160px;
+  overflow: hidden; }
 
 .movieDetails h3, .movieDetails p {
   padding: 0px;
-  max-width: 120px;
+  max-width: 160px;
   margin: 10px; }
 
 .movieDetails h3 {
-  font-size: 20px; }
+  font-size: 20px;
+  color: #dd692a; }
+  @media (min-width: 500px) {
+    .movieDetails h3 {
+      font-size: 28px; } }
 
 p {
   display: inline-block; }
+  @media (min-width: 500px) {
+    p {
+      font-size: 18px; } }
 
 header {
   padding-top: 10px;
@@ -151,14 +163,6 @@ header {
 
 header h1 {
   display: inline-block; }
-  header h1 ul {
-    text-align: right; }
-  header h1 li {
-    padding-right: 5px;
-    font-size: 16px; }
-    @media (min-width: 800px) {
-      header h1 li {
-        display: inline-block; } }
 
 header li, label {
   color: #FFF; }
@@ -235,6 +239,10 @@ footer {
   background: #424242;
   color: #FFF; }
   footer p {
-    width: 230px;
-    padding-top: 20px;
+    display: block;
+    width: 229px;
+    padding-top: 18px;
     margin-top: 10px; }
+    @media (min-width: 500px) {
+      footer p {
+        width: 257px; } }

@@ -5,9 +5,14 @@ footer {
     color: $primary-color;
 
     p {
-        width: 230px;
+        display: block;
+        width: 229px;
         @extend %center-element;
-        padding-top: 20px;
+        padding-top: 18px;
         margin-top: 10px;
+
+        @media (min-width: 500px) {
+            width: 257px;
+        }
     }
  }

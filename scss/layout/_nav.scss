@@ -18,19 +18,6 @@ header {
 
 header  h1 {
     display: inline-block;
-
-    ul {
-        text-align: right;
-    }
-    
-    li {
-        padding-right: 5px;
-        font-size: $font;
-        
-        @media (min-width: 800px) {
-            display: inline-block;
-        }
-    }
 }
 
 header li, label {
@@ -115,7 +102,7 @@ header ul {
         z-index: 0;
     
         li {
-            font-size: $font;
+            font-size: $font-nav;
             display: inline-block;
             padding-left: 5px;
         }
