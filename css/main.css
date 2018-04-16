@@ -72,8 +72,8 @@ p, li, label {
   .movie-search button {
     display: inline-block;
     position: absolute;
-    right: 0;
-    top: 30px;
+    right: -5px;
+    top: 32px;
     background-image: url("../images/search.png");
     background-color: transparent;
     background-repeat: no-repeat;
@@ -136,7 +136,7 @@ p, li, label {
 
 .movieDetails h3 {
   font-size: 20px;
-  color: #dd692a; }
+  color: #BF5322; }
   @media (min-width: 500px) {
     .movieDetails h3 {
       font-size: 28px; } }
