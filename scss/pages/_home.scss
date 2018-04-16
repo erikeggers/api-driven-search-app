@@ -12,10 +12,15 @@
     }
 
     label {
-        width: 160px;
+        width: 180px;
         padding: 2px;
         display: block;
         background-color: $background-color;
+        font-size: $font;
+
+        @media (min-width: 800px) {
+            font-size: $font-large;
+        }
     }
 
     input {
@@ -56,7 +61,6 @@
 
 #movie-container {
     min-height: calc(70vh - 60px);
-    //max-width: 860px;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -74,10 +78,6 @@
     padding: 0;
     display: flex;
     flex-wrap: wrap;
-
-    @media (min-width: 500px) {
-        
-    }
 
     li {
         width: 100%;
@@ -111,19 +111,29 @@
 .movieDetails {
     display: inline-block;
     margin: 10px; 
-    max-width: 320px;
+    max-width: 160px;
+    overflow: hidden;
 }
 
 .movieDetails h3, .movieDetails p {
     padding: 0px;
-    max-width: 120px;
+    max-width: 160px;
     margin: 10px;
 }
 
 .movieDetails h3 {
-    font-size: $mobile-header;
+    font-size: $font-h3;
+    color: $secondary-color;
+
+    @media (min-width: 500px) {
+        font-size: $font-h3-large;
+    }
 }
 
 p {
     display: inline-block;
+
+    @media (min-width: 500px) {
+        font-size: $font-large;
+    }
 }
