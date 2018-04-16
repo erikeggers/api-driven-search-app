@@ -19,9 +19,12 @@ h1 {
 
 h2:first-child {
   padding: 5px;
-  width: 300px;
-  margin-left: 50px;
+  width: 100%;
   background-color: #424242; }
+  @media (min-width: 800px) {
+    h2:first-child {
+      margin-left: 8px;
+      width: 300px; } }
 
 h3 {
   padding-top: 30px; }
@@ -34,8 +37,14 @@ p, li, label {
   font-size: 16px; }
 
 .movie-search {
-  width: 400px;
+  width: 260px;
   position: relative; }
+  @media (min-width: 400px) {
+    .movie-search {
+      width: 360px; } }
+  @media (min-width: 500px) {
+    .movie-search {
+      width: 460px; } }
   .movie-search label {
     width: 160px;
     padding: 2px;
@@ -68,29 +77,67 @@ p, li, label {
 
 #movie-container {
   min-height: calc(70vh - 60px);
-  width: 860px;
-  margin: 0 auto; }
-
-#movie-container ul {
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap; }
-  #movie-container ul img {
-    width: 225px; }
+  @media (min-width: 500px) {
+    #movie-container {
+      max-width: 490px; } }
+  @media (min-width: 800px) {
+    #movie-container {
+      max-width: 723px; } }
+
+#movie-container ul {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap; }
   #movie-container ul li {
-    width: 225px;
-    display: inline-block;
-    margin: 20px;
+    width: 100%;
+    display: flex;
+    margin: 10px;
     background-color: #424242;
     color: #FFF; }
-  #movie-container ul h3, #movie-container ul p {
-    margin: 10px; }
+    @media (min-width: 500px) {
+      #movie-container ul li {
+        width: 225px;
+        margin: 20px;
+        display: block;
+        margin: 8px; } }
+  #movie-container ul img {
+    width: 100px;
+    max-height: 150px;
+    display: inline-block; }
+    @media (min-width: 500px) {
+      #movie-container ul img {
+        width: 100%;
+        max-height: 300px; } }
+
+.movieDetails {
+  display: inline-block;
+  margin: 10px;
+  max-width: 320px; }
+
+.movieDetails h3, .movieDetails p {
+  padding: 0px;
+  max-width: 120px;
+  margin: 10px; }
+
+.movieDetails h3 {
+  font-size: 20px; }
+
+p {
+  display: inline-block; }
 
 header {
   padding-top: 10px;
-  height: 300px;
+  padding-right: 10px;
+  height: 200px;
   background-image: url("../images/theater.jpg");
   background-repeat: no-repeat;
   background-size: cover; }
+  @media (min-width: 800px) {
+    header {
+      height: 300px; } }
   header nav {
     max-width: 780px;
     padding-bottom: 60px; }
@@ -123,6 +170,7 @@ header ul {
       display: inline-block; } }
 
 .hamburger, .close {
+  width: 30px;
   position: absolute;
   top: 20px;
   right: 20px;
