@@ -47,9 +47,8 @@ function searchQuery (keywords) {
                     movie += '<img src="' + noPoster + '" alt="' + results[i].title + '">';
                 }
 
-                movie += '<h3>' + results[i].title + '</h3>'
-                movie += '<p>' + results[i].release_date + '</p>'
-                movie += '<p>' + results[i].overview + '</p>'
+                movie += '<div class="movieDetails"><h3>' + results[i].title + '</h3>'
+                movie += '<p>' + results[i].release_date + '</p></div>'
                 movie += '</li>'
             }
 

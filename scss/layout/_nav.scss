@@ -1,7 +1,12 @@
 header {
     padding-top: 10px;
-    height: 300px;
+    padding-right: 10px;
+    height: 200px;
     @include background(url("../images/theater.jpg"), no-repeat, cover);
+
+    @media (min-width: 800px) {
+        height: 300px;
+    }
 
     nav {
         @extend %center-element;
@@ -51,6 +56,7 @@ header ul {
 }
 
 .hamburger, .close {
+    width: 30px;
     position: absolute;
     top: 20px;
     right: 20px; 

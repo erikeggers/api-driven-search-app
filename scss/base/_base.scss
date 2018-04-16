@@ -18,9 +18,12 @@ h1 {
 
 h2:first-child {
     padding: 5px;
-    width: 300px;
-    margin-left:50px;
+    width: 100%;
     background-color: #424242;
+    @media (min-width: 800px) {
+        margin-left:8px;
+        width: 300px;
+    }
 }
 
 h3 {
